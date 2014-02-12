@@ -20,6 +20,7 @@ int readStudents( istream& input, StudentInfo info[] ){
 		while(ss >> nota){   
 			info[numRecords].grades[i] = nota;
 			//cout<<nota<< endl;
+			
 			i++;
 
     	}
@@ -30,8 +31,9 @@ int readStudents( istream& input, StudentInfo info[] ){
 
 StudentInfo& highestAverage( StudentInfo info[], int numStudents ){
   StudentInfo *max = &info[0];
-  //max.grades = &info[0].grades;
-  for (int x=0; x<=sizeof(max); x++ ){
+  for (int x=0; x<numStudents; x++ ){
+	//max = &info[x];
+
   	cout << "lol" << endl;
   }
   return *max;
