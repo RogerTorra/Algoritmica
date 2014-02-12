@@ -28,6 +28,6 @@ int main(int numargs, char *args[]) {
   StudentInfo max = highestAverage( info, numStudents );
 
   cout << "Student " << max.id << " has the highest average: " << max.avGrade << endl;
-
+  inFile.close();
   return 0;
 }
