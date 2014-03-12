@@ -13,4 +13,10 @@ bool binarySearch(int sortedArray[], int first, int last, int element) {
        else
            return binarySearch(sortedArray, mid+1, last, element);
    }
+   return false;
+}
+
+
+bool search(int array[], int num, int element ) {
+  return binarySearch( array, 0, num, element );
 }
