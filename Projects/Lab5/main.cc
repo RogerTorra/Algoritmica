@@ -17,6 +17,7 @@ istream& pick_input( int argc, char *filename ) {
 
 int main(int argc, char *argv[]) {
   int element, times, *array;
+ 
   istream& input = pick_input( argc, argv[1] );
   if (!input) { cerr << "Unable to open file" << endl; return 1; }
 
